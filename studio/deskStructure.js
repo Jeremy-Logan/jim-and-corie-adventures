@@ -24,16 +24,16 @@ export default () =>
         .icon(MdDashboard)
         .schemaType('page')
         .child(S.documentTypeList('page').title('Pages')),
-      S.listItem()
+      // S.listItem()
+      //   .title('Galleries')
+      //   .icon(MdDashboard)
+      //   .schemaType('gallery')
+      //   .child(S.documentTypeList('gallery').title('Galleries')),
+        S.listItem()
         .title('Galleries')
         .icon(MdDashboard)
-        .schemaType('gallery')
-        .child(S.documentTypeList('gallery').title('Galleries')),
-        S.listItem()
-        .title('Posts')
-        .icon(MdDashboard)
         .schemaType('post')
-        .child(S.documentTypeList('post').title('Posts')),
+        .child(S.documentTypeList('post').title('Galleries')),
       S.listItem()
         .title('Routes')
         .schemaType('route')
