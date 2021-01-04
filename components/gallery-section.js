@@ -26,11 +26,11 @@ export default function GallerySection({ images }) {
 	// }
 
 	return (
-		<section>
+		<section>{console.log(images)}
 			<div className='grid grid-cols-1 md:grid-cols-1 md:col-gap-16 lg:col-gap-32 row-gap-8 md:row-gap-10 mb-16'>
 				{images.map((section) => (
 					<>
-						<div>
+						<div key={section.heading}>
 							<h2 className='text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-16 mt-8'>
 								{section.heading}
 							</h2>
@@ -39,14 +39,14 @@ export default function GallerySection({ images }) {
 								className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 md:col-gap-4 lg:col-gap-8 row-gap-8 md:row-gap-4 lg:row-gap-8 mb-16 cursor-pointer'>
 								{section.image.map((i) => (
 									<GalleryImage
-										key={i.key}
+										key={i.asset}
 										alt={i.alt}
 										url={i}
 									/>
 								))}
 							</div>
 						</div>
-
+						
 						{viewerIsOpen ? (
 							<>
 								<div className='justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none w-full'>
@@ -66,16 +66,16 @@ export default function GallerySection({ images }) {
 												</button>
 											</div>
 											{/*body*/}
-											<Carousel
-												currentIndex={currentImage}>
+											<Carousel>
 												{section.image.map((i) => (
 													<>
 														<img
 															src={imageBuilder
 																.image(i)
-																.height(1000)
-																.width(2000)
+																.height(500)
+																.width(1000)
 																.url()}
+															key={i.asset}
 														/>
 													</>
 												))}
@@ -83,36 +83,9 @@ export default function GallerySection({ images }) {
 										</div>
 									</div>
 								</div>
-								<div
-									
-									className='opacity-25 fixed inset-0 z-40 bg-black'></div>
+								<div className='opacity-25 fixed inset-0 z-40 bg-black'></div>
 							</>
-						) : // <Modal onClose={closeLightbox}>
-						// 	{/* <Carousel
-						// 		currentIndex={currentImage}
-						// 		views={section.image.map((i) => ({
-						// 			...i,
-						// 			srcset: imageBuilder
-						// 					.image(i)
-						// 					.height(1000)
-						// 					.width(2000)
-						// 					.url(),
-						// 			caption: i.caption,
-						// 		}))}
-						// 	/> */}
-						// 	<Carousel currentIndex={currentImage}>
-						// 		{section.image.map((i) => (
-						// 			<img
-						// 				src={imageBuilder
-						// 					.image(i)
-						// 					.height(1000)
-						// 					.width(2000)
-						// 					.url()}
-						// 			/>
-						// 		))}
-						// 	</Carousel>
-						// </Modal>
-						null}
+						) : null}
 					</>
 				))}
 			</div>

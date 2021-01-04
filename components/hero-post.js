@@ -7,6 +7,7 @@ export default function HeroPost({
 	title,
 	image,
 	slug,
+	places,
 }) {
 	return (
 		<section>
@@ -17,7 +18,7 @@ export default function HeroPost({
 				<div>
 					<h3 className=' mb-4 text-4xl lg:text-6xl leading-tight'>
 						<Link as={`/posts/${slug}`} href='/posts/[slug]'>
-							<a className='hover:underline'>{title}</a>
+							<a className='hover:underline'>{title} <h3 className='text-2xl'>{places}</h3></a>
 						</Link>
 					</h3>
 				</div>
