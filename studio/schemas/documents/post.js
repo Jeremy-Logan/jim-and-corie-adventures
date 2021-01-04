@@ -11,13 +11,21 @@ export default {
 	fields: [
 		{
 			name: 'title',
-			title: 'Title',
+			title: 'Year',
 			type: 'string',
 		},
 		{
-			name: 'coverImage',
+			name: 'places',
+			title: 'Places',
+			type: 'string',
+		},
+		{
+			name: 'image',
 			title: 'Cover Image',
 			type: 'image',
+			options: {
+				hotspot: true,
+			},
 		},
 		{
 			name: 'slug',
