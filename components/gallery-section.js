@@ -35,7 +35,7 @@ export default function GallerySection({ section }) {
 							{section.heading}
 						</h2>
 						<div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 col-gap-4 lg:col-gap-8 row-gap-8 md:row-gap-4 lg:row-gap-8 mb-16 cursor-pointer'>
-							{section.image.map((image, index) => (
+							{section.images.map((image, index) => (
 								<div onClick={openLightbox}>
 									<GalleryImage
 										key={image._key}
@@ -67,7 +67,7 @@ export default function GallerySection({ section }) {
 											slidesToShow={1}
 											heightMode={'current'}
 											slideIndex={currentImage}>
-											{section.image.map((image, i) => (
+											{section.images.map((image, i) => (
 												<div className='justify-center'>
 													<SliderImage
 														key={image._key}
