@@ -25,12 +25,13 @@
     "@sanity/studio-hints": "^2.1.4",
     "@sanity/vision": "^2.1.4",
     "bcp47": "^1.1.2",
+    "intersection-observer": "^0.12.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^3.11.0",
     "sanity-plugin-dashboard-widget-document-list": "^0.0.11",
-    "sanity-plugin-dashboard-widget-netlify": "^1.0.1"
+    "intersection-observer": ""
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
