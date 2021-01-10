@@ -9,7 +9,7 @@ export default {
             title: 'Heading'
         },
         {
-            name: 'image',
+            name: 'images',
             title: 'Image(s)',
             type: 'array',
             of: [{ type: 'figure' }]

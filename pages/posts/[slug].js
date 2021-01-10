@@ -31,7 +31,8 @@ export default function Post({ post, morePosts, preview }) {
 								{/* <meta property="og:image" content={post.ogImage.url} /> */}
 							</Head>
 							<PostHeader title={post.title} image={post.image} />
-							<GallerySection images={post.gallerySection} />
+							<div className='grid grid-cols-1 md:grid-cols-1 md:col-gap-16 lg:col-gap-32 row-gap-8 md:row-gap-10 mb-16'>
+							{ post.gallerySection.map((section) => <GallerySection section={section}/>)}</div>
 						</article>
 						<SectionSeparator />
 
