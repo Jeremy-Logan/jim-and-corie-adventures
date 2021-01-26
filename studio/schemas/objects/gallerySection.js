@@ -12,7 +12,8 @@ export default {
             name: 'images',
             title: 'Image(s)',
             type: 'array',
-            of: [{ type: 'figure' }]
+            of: [{ type: 'figure' }],
+            validation: Rule => Rule.required()
         }
     ]
 }
