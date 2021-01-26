@@ -31,6 +31,10 @@ export default {
 			name: 'slug',
 			title: 'Slug',
 			type: 'slug',
+			options: {
+				source: 'title',
+				maxLength: 96,
+			},
 		},
 		{
 			name: 'gallerySection',
@@ -39,6 +43,7 @@ export default {
 				'This section is for photos from a specific trip which happened in the year of this gallery.',
 			type: 'array',
 			of: [{ type: 'gallerySection' }],
+			validation: Rule => Rule.required()
 		},
 	],
 	preview: {
