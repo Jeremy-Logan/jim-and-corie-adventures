@@ -9,10 +9,15 @@ export default {
             title: 'Heading'
         },
         {
-            name: 'images',
+            name: 'description',
+            type: 'portableText',
+            title: 'Description'
+        },
+        {
+            name: 'imageSection',
             title: 'Image(s)',
             type: 'array',
-            of: [{ type: 'figure' }],
+            of: [{ type: 'imageSection' }],
             validation: Rule => Rule.required()
         }
     ]

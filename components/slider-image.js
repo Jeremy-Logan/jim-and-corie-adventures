@@ -7,15 +7,13 @@ export default function SliderImage({ alt, caption, url, slug }) {
 		<img
 		height={800}
 			alt={`${alt}`}
-			className={'justify-center ', cn('shadow-small', {
-				'hover:shadow-medium transition-shadow duration-200': slug,
-			})}
+			className='justify-center hover:shadow-medium transition-shadow duration-200'
 			src={imageBuilder.image(url).auto('format').height(800).url()}
 		/>
 	)
 
 	return (
-		<div className='sm:mx-0'>
+		<div className='sm:mx-auto flex justify-center'>
 				{image}
 		</div>
 	)

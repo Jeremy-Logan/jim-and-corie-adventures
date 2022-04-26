@@ -32,7 +32,7 @@ export default function Post({ post, morePosts, preview }) {
 							</Head>
 							<PostHeader title={post.title} image={post.image} />
 							<div className='grid grid-cols-1 md:grid-cols-1 md:col-gap-16 lg:col-gap-32 row-gap-8 md:row-gap-10 mb-16'>
-							{ post.gallerySection.map((section) => <GallerySection section={section}/>)}</div>
+							{ post.gallerySection.map((section, index) => <GallerySection key={index} section={section}/>)}</div>
 						</article>
 						<SectionSeparator />
 
