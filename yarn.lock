@@ -1208,6 +1208,11 @@
   "resolved" "https://registry.npmjs.org/@sanity/color/-/color-2.1.10.tgz"
   "version" "2.1.10"
 
+"@sanity/components@^2.14.0":
+  "integrity" "sha512-D8t7l+exvw1cg80m8yDZDRboAI6L827FeCacGjTOdElvgrR2shtsbepYui7ODfRgx9ynAceNDsQ1VSNnUgIHug=="
+  "resolved" "https://registry.npmjs.org/@sanity/components/-/components-2.14.0.tgz"
+  "version" "2.14.0"
+
 "@sanity/core@^2.29.5":
   "integrity" "sha512-JvGVvKDzkiSWJo8U2oYj8Ys9eJQHl7oPDYkjKvXd3hdB1LJ2axEdtgKwKYdRMe7EHeUAQ4UB8h1SKLwnN1cBPA=="
   "resolved" "https://registry.npmjs.org/@sanity/core/-/core-2.29.5.tgz"
