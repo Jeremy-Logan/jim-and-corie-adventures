@@ -9,14 +9,15 @@ export default {
 		},
 	],
 	fields: [
+		
 		{
-			name: 'title',
-			title: 'Year',
+			name: 'places',
+			title: 'Places / Title',
 			type: 'string',
 		},
 		{
-			name: 'places',
-			title: 'Places',
+			name: 'year',
+			title: 'Year',
 			type: 'string',
 		},
 		{
@@ -32,7 +33,7 @@ export default {
 			title: 'Slug',
 			type: 'slug',
 			options: {
-				source: 'title',
+				source: 'places',
 				maxLength: 96,
 			},
 		},
@@ -48,7 +49,7 @@ export default {
 	],
 	preview: {
 		select: {
-			title: 'title',
+			title: 'places',
 			media: 'image',
 		},
 	},

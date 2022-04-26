@@ -27,10 +27,10 @@ export default function Post({ post, morePosts, preview }) {
 					<>
 						<article>
 							<Head>
-								<title>{post.title}</title>
+								<title>Jim and Corie in {post.places}</title>
 								{/* <meta property="og:image" content={post.ogImage.url} /> */}
 							</Head>
-							<PostHeader title={post.title} image={post.image} />
+							<PostHeader date={post.year} places={post.places} image={post.image} />
 							<div className='grid grid-cols-1 md:grid-cols-1 md:col-gap-16 lg:col-gap-32 row-gap-8 md:row-gap-10 mb-16'>
 							{ post.gallerySection.map((section, index) => <GallerySection key={index} section={section}/>)}</div>
 						</article>

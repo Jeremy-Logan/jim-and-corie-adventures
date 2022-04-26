@@ -22,7 +22,7 @@ export default {
         annotations: [{ type: 'link' }, { type: 'internalLink' }],
       },
     },
-    { type: 'figure' },
+    { type: 'image' },
     { type: 'embedHTML' },
   ],
 };

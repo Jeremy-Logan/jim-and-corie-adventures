@@ -2,12 +2,12 @@
 import CoverImage from '../components/cover-image'
 import PostTitle from '../components/post-title'
 
-export default function PostHeader({ title, image, date }) {
+export default function PostHeader({ places, image, date }) {
   return (
     <>
-      <PostTitle>{title}</PostTitle>
+      <PostTitle>{places} {date}</PostTitle>
       <div className="mb-8 md:mb-16 sm:mx-0">
-        <CoverImage title={title} url={image} />
+        <CoverImage title={places + date} url={image} />
       </div>
 
     </>

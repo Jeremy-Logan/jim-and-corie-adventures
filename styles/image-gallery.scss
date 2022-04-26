@@ -131,6 +131,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
   @include vendor-prefix('user-select', none);
   -webkit-tap-highlight-color: $ig-transparent;
   position: relative;
+  
 
   &.fullscreen-modal {
     background: $ig-black;
@@ -160,13 +161,14 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
   }
 
   .image-gallery-slide .image-gallery-image {
-    max-height: calc(100vh - 80px); // 80 px for the thumbnail space
+    max-height: calc(90vh - 200px);
+    margin-top: 20px; 
   }
 
   &.left,
   &.right {
     .image-gallery-slide .image-gallery-image {
-      max-height: 100vh;
+      max-height: 90vh;
     }
   }
 }
@@ -215,6 +217,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
     background: $ig-background-black;
     bottom: 70px;
     color: $ig-white;
+    font-size: 1.3em;
     left: 0;
     line-height: 1;
     padding: 10px 20px;
@@ -223,7 +226,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 
     @media (max-width: $ig-small-screen) {
       bottom: 45px;
-      font-size: .8em;
+      font-size: 1.3em;
       padding: 8px 15px;
     }
 
@@ -447,7 +450,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
   z-index: 4;
 
   @media(max-width: $ig-small-screen) {
-    font-size: .8em;
+    font-size: .9em;
     padding: 5px 10px;
   }
 }
