@@ -19,11 +19,11 @@ export default () =>
       //       .schemaType('site-config')
       //       .documentId('global-config')
       //   ),
-      S.listItem()
-        .title('Pages')
-        .icon(MdDashboard)
-        .schemaType('page')
-        .child(S.documentTypeList('page').title('Pages')),
+      // S.listItem()
+      //   .title('Pages')
+      //   .icon(MdDashboard)
+      //   .schemaType('page')
+      //   .child(S.documentTypeList('page').title('Pages')),
       // S.listItem()
       //   .title('Galleries')
       //   .icon(MdDashboard)
@@ -34,9 +34,9 @@ export default () =>
         .icon(MdDashboard)
         .schemaType('post')
         .child(S.documentTypeList('post').title('Galleries')),
-      S.listItem()
-        .title('Routes')
-        .schemaType('route')
-        .child(S.documentTypeList('route').title('Routes')),
-      ...S.documentTypeListItems().filter(hiddenDocTypes)
+      // S.listItem()
+      //   .title('Routes')
+      //   .schemaType('route')
+      //   .child(S.documentTypeList('route').title('Routes')),
+      // ...S.documentTypeListItems().filter(hiddenDocTypes)
     ])
