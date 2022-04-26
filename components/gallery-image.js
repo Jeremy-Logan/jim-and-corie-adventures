@@ -2,7 +2,7 @@ import cn from 'classnames'
 import Link from 'next/link'
 import { imageBuilder } from '../lib/sanity'
 
-export default function GalleryImage({ alt, caption, url, slug }) {
+export default function GalleryImage({ alt,  url,  }) {
 	const image = (
 		<img
 			width={1000}

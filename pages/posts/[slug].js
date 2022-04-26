@@ -1,12 +1,12 @@
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import Container from '../../components/container'
-import PostBody from '../../components/post-body'
+
 import MoreStories from '../../components/more-stories'
 import Header from '../../components/header'
 import GallerySection from '../../components/gallery-section'
 import PostHeader from '../../components/post-header'
-import SectionSeparator from '../../components/section-separator'
+
 import Layout from '../../components/layout'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
 import PostTitle from '../../components/post-title'
@@ -30,11 +30,11 @@ export default function Post({ post, morePosts, preview }) {
 								<title>Jim and Corie in {post.places}</title>
 								{/* <meta property="og:image" content={post.ogImage.url} /> */}
 							</Head>
-							<PostHeader date={post.year} places={post.places} image={post.image} />
+							<PostHeader year={post.year} places={post.places} image={post.image} />
 							<div className='grid grid-cols-1 md:grid-cols-1 md:col-gap-16 lg:col-gap-32 row-gap-8 md:row-gap-10 mb-16'>
 							{ post.gallerySection.map((section, index) => <GallerySection key={index} section={section}/>)}</div>
 						</article>
-						<SectionSeparator />
+						
 
 						<MoreStories posts={morePosts} />
 					</>
