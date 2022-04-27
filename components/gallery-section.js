@@ -3,6 +3,7 @@ import GalleryImage from '../components/gallery-image'
 import { PortableText } from '@portabletext/react'
 import { getImageDimensions } from '@sanity/asset-utils'
 
+
 import ImageGallery from 'react-image-gallery'
 
 import { imageBuilder } from '../lib/sanity'

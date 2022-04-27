@@ -1,4 +1,4 @@
-import '../styles/index.css'
+import '../styles/index.scss'
 import '../styles/image-gallery.scss'
 
 function MyApp({ Component, pageProps }) {
