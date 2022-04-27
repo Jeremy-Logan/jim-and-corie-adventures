@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
+const withSass = require('@zeit/next-sass')
+module.exports = withSass({
     images: {
         // loader: "cloudinary",
         // path: "https://res.cloudinary.com/the-color-mill/image/upload/",
@@ -12,4 +13,4 @@ module.exports = {
         API_KEY: process.env.API_KEY,
     },
     reactStrictMode: true,
-};
+});
